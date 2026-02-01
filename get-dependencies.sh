@@ -8,8 +8,10 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     audiotube           \
+    futuresql           \
     pipewire-audio      \
     pipewire-jack       \
+    python-ytmusicapi   \
     qqc2-desktop-style
 
 echo "Installing debloated packages..."
