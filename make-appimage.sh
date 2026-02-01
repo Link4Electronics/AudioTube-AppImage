@@ -12,6 +12,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/org.kde.audiotube.svg
 export DESKTOP=/usr/share/applications/org.kde.audiotube.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
+export DEPLOY_SYS_PYTHON=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/audiotube
