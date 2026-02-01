@@ -8,7 +8,7 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     audiotube           \
-    pipewire            \
+    pipewire-audio      \
     pipewire-jack       \
     qqc2-desktop-style
 
