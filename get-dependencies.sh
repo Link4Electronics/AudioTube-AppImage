@@ -12,7 +12,8 @@ pacman -Syu --noconfirm \
     pipewire-audio      \
     pipewire-jack       \
     python-ytmusicapi   \
-    qqc2-desktop-style
+    qqc2-desktop-style  \
+    yt-dlp
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
