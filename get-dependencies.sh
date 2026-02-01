@@ -7,9 +7,10 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    audiotube     \
-    pipewire      \
-    pipewire-jack
+    audiotube           \
+    pipewire            \
+    pipewire-jack       \
+    qqc2-desktop-style
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
