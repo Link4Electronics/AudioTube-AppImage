@@ -8,6 +8,7 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     audiotube           \
+    deno                \
     futuresql           \
     pipewire-audio      \
     pipewire-jack       \
