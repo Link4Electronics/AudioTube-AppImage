@@ -16,7 +16,7 @@ export DEPLOY_PYTHON=1
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/audiotube
+quick-sharun /usr/bin/audiotube /usr/bin/node /usr/include/node/*
 
 # Additional changes can be done in between here
 
