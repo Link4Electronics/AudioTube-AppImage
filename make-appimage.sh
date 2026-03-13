@@ -13,6 +13,7 @@ export DESKTOP=/usr/share/applications/org.kde.audiotube.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
 export DEPLOY_PYTHON=1
+export DEPLOY_QT=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/audiotube
