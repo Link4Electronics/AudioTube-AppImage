@@ -8,13 +8,16 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     audiotube           \
-    deno                \
     futuresql           \
     pipewire-audio      \
     pipewire-jack       \
     python-ytmusicapi   \
     qqc2-desktop-style  \
     yt-dlp
+
+if [ "${ARCH}" = aarch64 ]; then
+    pacman -S --noconfirm nodejs
+fi
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
