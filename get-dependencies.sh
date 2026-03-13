@@ -6,14 +6,17 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    audiotube           \
-    futuresql           \
-    nodejs              \
-    pipewire-audio      \
-    pipewire-jack       \
-    python-ytmusicapi   \
-    qqc2-desktop-style  \
+pacman -Syu --noconfirm     \
+    audiotube               \
+    ca-certificates         \
+    ca-certificates-utils   \
+    ca-certificates-mozilla \
+    futuresql               \
+    nodejs                  \
+    pipewire-audio          \
+    pipewire-jack           \
+    python-ytmusicapi       \
+    qqc2-desktop-style      \
     yt-dlp
 
 echo "Installing debloated packages..."
