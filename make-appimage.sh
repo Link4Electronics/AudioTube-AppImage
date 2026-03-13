@@ -16,7 +16,11 @@ export DEPLOY_PYTHON=1
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/audiotube /usr/bin/deno
+if [ "${ARCH}" = x86_64 ]; then
+    quick-sharun /usr/bin/audiotube /usr/bin/deno
+else
+    quick-sharun /usr/bin/audiotube /usr/bin/node /usr/include/node/*
+fi
 
 # Additional changes can be done in between here
 
