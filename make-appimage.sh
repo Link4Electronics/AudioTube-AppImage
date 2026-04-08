@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q audiotube | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.bg.hook:get-yt-dlp.src.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/scalable/apps/org.kde.audiotube.svg
 export DESKTOP=/usr/share/applications/org.kde.audiotube.desktop
@@ -16,11 +16,7 @@ export DEPLOY_PYTHON=1
 export DEPLOY_QT=1
 
 # Deploy dependencies
-if [ "${ARCH}" = x86_64 ]; then
-    quick-sharun /usr/bin/audiotube /usr/bin/deno /usr/bin/yt-dlp
-else
-    quick-sharun /usr/bin/audiotube /usr/bin/node /usr/include/node/*  /usr/bin/yt-dlp
-fi
+quick-sharun /usr/bin/audiotube
 
 # Additional changes can be done in between here
 
