@@ -17,9 +17,9 @@ export DEPLOY_QT=1
 
 # Deploy dependencies
 if [ "${ARCH}" = x86_64 ]; then
-    quick-sharun /usr/bin/audiotube /usr/bin/deno
+    quick-sharun /usr/bin/audiotube /usr/bin/bun /usr/bin/yt-dlp
 else
-    quick-sharun /usr/bin/audiotube /usr/bin/node /usr/include/node/*
+    quick-sharun /usr/bin/audiotube /usr/bin/node /usr/include/node/*  /usr/bin/yt-dlp
 fi
 
 # Additional changes can be done in between here
